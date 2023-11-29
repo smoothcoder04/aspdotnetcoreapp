@@ -1,12 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace mymvcapp.Controllers
 {
     public class HomeController : Controller
     {
-        public string index()
+        public ViewResult Index()
         {
-            return "Hello WORLD!";
+            int hour = DateTime.Now.Hour;
+            string viewModel = hour < 12 ? "Good Morning" : "Good Afternoon";
+            return View("MyView", viewModel);
+
         }
     }
 }

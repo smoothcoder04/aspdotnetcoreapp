@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{BF112CA0-91F4-452A-84C2-6F52E20A0E3D}|Default">
   <MonoDevelop.Ide.ItemProperties.mymvcapp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
     <Files>
       <File FileName="Program.cs" Line="9" Column="14" />
       <File FileName="Startup.cs" />
-      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__" />
+        <State name="__root__">
+          <Node name="mymvcapp">
+            <Node name="mymvcapp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
