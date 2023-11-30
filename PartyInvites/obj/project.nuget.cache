@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aLZ9q5ERTZIdLBElhFWwHWrWeKP+3Vjz4w7bA1JyiYi8Nor4He+Jo+Bt2oc+6lTTHtCLHtnMrFhTO1DP8XMFqA==",
+  "success": true,
+  "projectFilePath": "/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/PartyInvites/PartyInvites.csproj",
+  "expectedPackageFiles": [
+    "/Users/mawhinneym/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.32/microsoft.netcore.app.host.osx-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
