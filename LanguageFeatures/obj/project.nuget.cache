@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rr0FZwIhckJ/IaIfquotINNzcQg56xc86I7KtqHq+5UKB69HYMsJnm87sKDMYPjHiYclTwU+Hna9C0uCd+cJmQ==",
+  "success": true,
+  "projectFilePath": "/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/LanguageFeatures/LanguageFeatures.csproj",
+  "expectedPackageFiles": [
+    "/Users/mawhinneym/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.32/microsoft.netcore.app.host.osx-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
