@@ -8,16 +8,24 @@ namespace LanguageFeatures.Controllers
     {
         public ViewResult Index()
         {
-            List<string> results = new List<string>();
-            foreach (Product p in Product.GetProducts())
-            {
-                string name = p?.Name;
-                decimal? price = p?.Price;
-                string relatedName = p?.Related?.Name;
+            string[] namesarr = new string[3];
+            namesarr[0] = "Louie";
+            namesarr[1] = "Phoebe";
+            namesarr[2] = "Ro";
 
-                results.Add(string.Format("Name:{0}, Price:{1}, Related: {2}",name,price,relatedName));
+
+            object[] data = new object[] { 24M, 29.5M, "apple", "orange", 10, 100 };
+            decimal total = 0;
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (data[i] is decimal d)
+                {
+                    total += d;
+                }
             }
-            return View(results);
+
+
+            return View("Index", new string[] { $"Total:{total:C2}" });
         }
     }
 }
