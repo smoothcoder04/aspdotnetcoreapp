@@ -8,24 +8,12 @@ namespace LanguageFeatures.Controllers
     {
         public ViewResult Index()
         {
-            string[] namesarr = new string[3];
-            namesarr[0] = "Louie";
-            namesarr[1] = "Phoebe";
-            namesarr[2] = "Ro";
-
-
-            object[] data = new object[] { 24M, 29.5M, "apple", "orange", 10, 100 };
-            decimal total = 0;
-            for (int i = 0; i < data.Length; i++)
+            ShoppingCart cart = new ShoppingCart
             {
-                if (data[i] is decimal d)
-                {
-                    total += d;
-                }
-            }
-
-
-            return View("Index", new string[] { $"Total:{total:C2}" });
+                Products = Product.GetProducts()
+            };
+            decimal cartTotal = cart.TotalPrices();
+            return View("Index", new string[] { $"Total: {cartTotal:C2}" });
         }
     }
 }
