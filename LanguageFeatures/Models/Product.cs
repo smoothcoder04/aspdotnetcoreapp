@@ -20,14 +20,14 @@ namespace LanguageFeatures.Models
             Product kayak = new Product
             {
                 Name = "Kayak",
-                Price = 275M,
+                Price = 40.20M,
                 Category = "Water Carft"
             };
 
             Product lifejacket = new Product(false)
             {
                 Name = "Lifejacket",
-                Price = 48.5M
+                Price = 60.10M
             };
 
             kayak.Related = lifejacket;
