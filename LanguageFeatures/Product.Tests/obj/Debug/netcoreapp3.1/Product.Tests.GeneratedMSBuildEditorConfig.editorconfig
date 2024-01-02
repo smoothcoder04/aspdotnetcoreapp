@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Product.Tests
+build_property.ProjectDir = /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/LanguageFeatures/Product.Tests/
