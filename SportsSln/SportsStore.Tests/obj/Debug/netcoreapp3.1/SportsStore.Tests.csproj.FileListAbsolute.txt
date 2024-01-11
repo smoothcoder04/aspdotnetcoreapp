@@ -1,0 +1,5 @@
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore.Tests/obj/Debug/netcoreapp3.1/SportsStore.Tests.csproj.AssemblyReference.cache
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore.Tests/obj/Debug/netcoreapp3.1/SportsStore.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore.Tests/obj/Debug/netcoreapp3.1/SportsStore.Tests.AssemblyInfoInputs.cache
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore.Tests/obj/Debug/netcoreapp3.1/SportsStore.Tests.AssemblyInfo.cs
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore.Tests/obj/Debug/netcoreapp3.1/SportsStore.Tests.csproj.CoreCompileInputs.cache

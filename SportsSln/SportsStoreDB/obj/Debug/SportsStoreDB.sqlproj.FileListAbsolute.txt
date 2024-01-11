@@ -1,0 +1,9 @@
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/bin/Debug/SportsStoreDB.dacpac
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/bin/Debug/SportsStoreDB.dll
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/bin/Debug/SportsStoreDB.pdb
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/obj/Debug/Model.xml
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/obj/Debug/refactor.xml
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/obj/Debug/postdeploy.sql
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/obj/Debug/predeploy.sql
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/obj/Debug/SportsStoreDB.dll
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStoreDB/obj/Debug/SportsStoreDB.pdb

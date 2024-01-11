@@ -1,6 +1,10 @@
 {
   "dataworkspace.excludedProjects": [
     "MyDatabases/MyDatabases.sqlproj",
-    "StudentDatabase/StudentDatabase.sqlproj"
+    "StudentDatabase/StudentDatabase.sqlproj",
+    "Mydb/Mydb.sqlproj",
+    "SportsStoreDB/SportsStoreDB.sqlproj",
+    "Mydb/SportsStoreDb/SportsStoreDb.sqlproj",
+    "SportsSln/test/test.sqlproj"
   ]
 }

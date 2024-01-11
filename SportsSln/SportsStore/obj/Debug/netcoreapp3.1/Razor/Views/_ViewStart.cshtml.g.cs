@@ -19,8 +19,15 @@ using SportsStore.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/Views/_ViewImports.cshtml"
+using SportsStore.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c0cb7f826af1de6ea245782a012ca2e0f93097b2", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"af9cf08247c5a0bcd3ff371dee3d7f7ebdef2084", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"571ba0bcb34167500f948dbd30c64a38a1e43c20", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
