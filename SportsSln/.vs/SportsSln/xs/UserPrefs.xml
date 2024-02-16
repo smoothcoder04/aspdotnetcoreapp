@@ -1,11 +1,7 @@
 ﻿<Properties StartupConfiguration="{779EBD99-03A1-4E17-B12D-B2FE7DC6A2B0}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.SportsStore PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="SportsStore/Program.cs">
     <Files>
       <File FileName="SportsStore/Models/SeedData.cs" />
@@ -15,14 +11,19 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SportsSln" expanded="True">
-            <Node name="SportsStore">
+          <Node name="SportsSln">
+            <Node name="SportsStore" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="SportsStore.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
