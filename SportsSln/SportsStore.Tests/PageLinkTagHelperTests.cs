@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Moq;
-using SportsStore.Models.ViewModels;
 using SportsStore.Infrastructure;
+using SportsStore.Models.ViewModels;
 using Xunit;
 
 namespace SportsStore.Tests

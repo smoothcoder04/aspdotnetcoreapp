@@ -57,7 +57,7 @@ using SportsStore.Models.ViewModels;
                 return __backed__tagHelperScopeManager;
             }
         }
-        private global::SportsStore.Infrastructure.PageLinkHelper __SportsStore_Infrastructure_PageLinkHelper;
+        private global::SportsStore.Infrastructure.PageLinkTagHelper __SportsStore_Infrastructure_PageLinkTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -103,34 +103,34 @@ using SportsStore.Models.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8973b4cf32cabd4f47d8092bb916a5b96d8e37f56464", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8973b4cf32cabd4f47d8092bb916a5b96d8e37f56470", async() => {
                 WriteLiteral("\n");
             }
             );
-            __SportsStore_Infrastructure_PageLinkHelper = CreateTagHelper<global::SportsStore.Infrastructure.PageLinkHelper>();
-            __tagHelperExecutionContext.Add(__SportsStore_Infrastructure_PageLinkHelper);
+            __SportsStore_Infrastructure_PageLinkTagHelper = CreateTagHelper<global::SportsStore.Infrastructure.PageLinkTagHelper>();
+            __tagHelperExecutionContext.Add(__SportsStore_Infrastructure_PageLinkTagHelper);
 #nullable restore
 #line 18 "/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/Views/Home/Index.cshtml"
-__SportsStore_Infrastructure_PageLinkHelper.PageModel = Model.PagingInfo;
+__SportsStore_Infrastructure_PageLinkTagHelper.PageModel = Model.PagingInfo;
 
 #line default
 #line hidden
 #nullable disable
-            __tagHelperExecutionContext.AddTagHelperAttribute("page-model", __SportsStore_Infrastructure_PageLinkHelper.PageModel, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __tagHelperExecutionContext.AddTagHelperAttribute("page-model", __SportsStore_Infrastructure_PageLinkTagHelper.PageModel, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
             __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
 #nullable restore
 #line 18 "/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/Views/Home/Index.cshtml"
-__SportsStore_Infrastructure_PageLinkHelper.PageClassesEnabled = true;
+__SportsStore_Infrastructure_PageLinkTagHelper.PageClassesEnabled = true;
 
 #line default
 #line hidden
 #nullable disable
-            __tagHelperExecutionContext.AddTagHelperAttribute("page-classes-enabled", __SportsStore_Infrastructure_PageLinkHelper.PageClassesEnabled, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-            __SportsStore_Infrastructure_PageLinkHelper.PageClass = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute("page-classes-enabled", __SportsStore_Infrastructure_PageLinkTagHelper.PageClassesEnabled, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            __SportsStore_Infrastructure_PageLinkTagHelper.PageClass = (string)__tagHelperAttribute_1.Value;
             __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
-            __SportsStore_Infrastructure_PageLinkHelper.PageClassNormal = (string)__tagHelperAttribute_2.Value;
+            __SportsStore_Infrastructure_PageLinkTagHelper.PageClassNormal = (string)__tagHelperAttribute_2.Value;
             __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_2);
-            __SportsStore_Infrastructure_PageLinkHelper.PageClassSelected = (string)__tagHelperAttribute_3.Value;
+            __SportsStore_Infrastructure_PageLinkTagHelper.PageClassSelected = (string)__tagHelperAttribute_3.Value;
             __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
             __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_4);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);

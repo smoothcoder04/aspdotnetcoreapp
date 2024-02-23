@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using SportsStore.Controllers;
 using SportsStore.Models;
+using SportsStore.Models.ViewModels;
 using Xunit;
 
 namespace SportsStore.Tests
@@ -17,7 +18,7 @@ namespace SportsStore.Tests
             Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
             mock.Setup(m => m.Products).Returns((new Product[]{
                 new Product {ProductID=1, Name= "P1"},
-                new Product {ProductID=1, Name= "P1"}
+                new Product {ProductID=2, Name= "P2"}
 
             }).AsQueryable<Product>());
             HomeController controller = new HomeController(mock.Object);
@@ -46,7 +47,7 @@ namespace SportsStore.Tests
             }).AsQueryable<Product>());
 
             HomeController controller = new HomeController(mock.Object);
-            controller.PageSize = 1;
+            controller.PageSize = 3;
 
             //Act
             ProductsListViewModel result = 
@@ -77,7 +78,7 @@ namespace SportsStore.Tests
             HomeController controller = new HomeController(mock.Object) {PageSize = 3};
 
             //Act
-            ProductsListView result = controller.Index(2).ViewData.Model as ProductsListViewModel;
+            ProductsListViewModel result = controller.Index(2).ViewData.Model as ProductsListViewModel;
 
             //Assert
             PagingInfo pageInfo = result.PagingInfo;

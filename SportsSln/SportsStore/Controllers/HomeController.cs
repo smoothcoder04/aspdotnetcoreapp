@@ -8,7 +8,7 @@ namespace SportsStore.Controllers
     public class HomeController : Controller
     {
         private IStoreRepository repository;
-        public int PageSize = 2;
+        public int PageSize = 2; //number of products shown per page
 
         public HomeController(IStoreRepository repo)
         {

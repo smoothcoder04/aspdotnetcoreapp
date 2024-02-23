@@ -9,11 +9,11 @@ using SportsStore.Models.ViewModels;
 namespace SportsStore.Infrastructure
 {
     [HtmlTargetElement("div", Attributes="page-model")]
-    public class PageLinkHelper : TagHelper
+    public class PageLinkTagHelper : TagHelper
     {
         private IUrlHelperFactory urlHelperFactory;
 
-        public PageLinkHelper(IUrlHelperFactory helperFactory)
+        public PageLinkTagHelper(IUrlHelperFactory helperFactory)
         {
             urlHelperFactory = helperFactory;
         }
