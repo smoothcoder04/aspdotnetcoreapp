@@ -3,8 +3,11 @@
     "MyDatabases/MyDatabases.sqlproj",
     "StudentDatabase/StudentDatabase.sqlproj",
     "Mydb/Mydb.sqlproj",
-    "SportsStoreDB/SportsStoreDB.sqlproj",
     "Mydb/SportsStoreDb/SportsStoreDb.sqlproj",
-    "SportsSln/test/test.sqlproj"
+    "SportsSln/test/test.sqlproj",
+    "Databases/Databases.sqlproj",
+    "SportsSln/SportsStore/SportsStoreDB/SportsStoreDB.sqlproj",
+    "SportsStoreDB/SportsStoreDB.sqlproj",
+    "SportsSln/SportsStoreDB/SportsStoreDB.sqlproj"
   ]
 }

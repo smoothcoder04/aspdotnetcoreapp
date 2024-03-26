@@ -11,11 +11,11 @@ namespace SportsStore.Models
         {
             StoreDbContext context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<StoreDbContext>();
 
-            if(context.Database.GetPendingMigrations().Any())
+            if (context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();
             }
-            if(!context.Products.Any())
+            if (!context.Products.Any())
             {
                 context.Products.AddRange(
                     new Product
@@ -27,7 +27,7 @@ namespace SportsStore.Models
                     },
                     new Product
                     {
-                        Name = "Kayak",
+                        Name = "Kayak Big",
                         Description = "A small boat for one person",
                         Category = "Watersports",
                         Price = 200

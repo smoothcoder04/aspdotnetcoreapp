@@ -2,7 +2,6 @@
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/global.json
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/libman.json
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/SportsStore
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/SportsStore.deps.json
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/SportsStore.runtimeconfig.json
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/SportsStore.runtimeconfig.dev.json
@@ -41,8 +40,6 @@
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.csproj.AssemblyReference.cache
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.GeneratedMSBuildEditorConfig.editorconfig
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.AssemblyInfoInputs.cache
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.AssemblyInfo.cs
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.csproj.CoreCompileInputs.cache
@@ -50,11 +47,6 @@
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.RazorAssemblyInfo.cache
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.RazorAssemblyInfo.cs
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/SportsStore.StaticWebAssets.Manifest.cache
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/SportsStore.StaticWebAssets.Pack.cache
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.SportsStore.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.SportsStore.props
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.SportsStore.props
-/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.SportsStore.props
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.TagHelpers.input.cache
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.TagHelpers.output.cache
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.RazorCoreGenerate.cache
@@ -70,3 +62,12 @@
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.dll
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.pdb
 /Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.genruntimeconfig.cache
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/bin/Debug/netcoreapp3.1/SportsStore
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.csproj.AssemblyReference.cache
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/SportsStore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/SportsStore.StaticWebAssets.Pack.cache
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.SportsStore.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.SportsStore.props
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.SportsStore.props
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.SportsStore.props
+/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/NavigationMenu/Default.cshtml.g.cs
