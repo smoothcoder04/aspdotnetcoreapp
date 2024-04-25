@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pXA/aRjuwp7wQ/ClAehsd4f9tZd2wjzCeYNDunkNj8HztV0329+WbhVpbdXonDvCxlr0R9gbUicZ4m6B3z+lZA==",
+  "dgSpecHash": "UeAvVslDUAnjyk3QMPh8qKqSbsSZUdFGE+eI2iD6WaQ1MWIjJZp6XHRryj4OtaFtCsxZSxkOTrXxHNtCUFAGOA==",
   "success": true,
   "projectFilePath": "/Users/mawhinneym/Projects/C#Beginner/MVC_Application/aspdotnetcoreapp/SportsSln/SportsStore/SportsStore.csproj",
   "expectedPackageFiles": [
@@ -90,8 +90,7 @@
     "/Users/mawhinneym/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/mawhinneym/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/mawhinneym/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/mawhinneym/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "/Users/mawhinneym/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.32/microsoft.netcore.app.host.osx-x64.3.1.32.nupkg.sha512"
+    "/Users/mawhinneym/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
