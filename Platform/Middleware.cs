@@ -1,25 +1,30 @@
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
 namespace Platform
 {
-    public class QueryStringMiddleware
+    public class LocationMiddleware
     {
         private RequestDelegate next;
+        private MessageOptions options;
 
-        public QueryStringMiddleware(RequestDelegate nextDelegate)
+        public LocationMiddleware(RequestDelegate nextDelegate, IOptions<MessageOptions> opts)
         {
             this.next = nextDelegate;
+            this.options = opts.Value;
         }
 
-        public async Task Invoke(HttpContext context)
+        private async Task Invoke(HttpContext context)
         {
-            if (context.Request.Method == HttpMethods.Get
-                        && context.Request.Query["custom"] == "true")
+            if(context.Request.Path == "/location")
             {
-                await context.Response.WriteAsync("Class based middleware \n");
+                await context.Response.WriteAsync($"{options.CityName}, {options.CountryName}");
             }
-            await next(context);
+            else
+            {
+                await next(context);
+            }
         }
     }
 

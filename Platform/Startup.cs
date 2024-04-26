@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace Platform
 {
@@ -16,6 +17,9 @@ namespace Platform
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<MessageOptions>(options => {
+                options.CityName = "Oxford";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,11 +29,33 @@ namespace Platform
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Use(async(context, next) =>
+            
+            app.UseMiddleware<LocationMiddlewares>();
+            
+            /* app.Use(async(context, next) =>
             {
-                await next();
-                await context.Response.WriteAsync($"\nStatus Code: {context.Response.StatusCode}");
+                if(context.Request.Path == "/location")
+                {
+                    MessageOptions opts = msgOptions.Value;
+                    await context.Response.WriteAsync($"{opts.CityName}, {opts.CountryName}");
+                }
+                else
+                {
+                    await next();
+                }
+            }); */
+
+            
+            app.Use(async (context, next) => 
+            {
+                if(context.Request.Path == "/short")
+                {
+                    await context.Response.WriteAsync("Request short circuited");
+                }
+                else
+                {
+                    await next();
+                }
             });
 
             app.Use(async (context, next)=> {
@@ -40,7 +66,7 @@ namespace Platform
                 await next();
             });
 
-            app.UseMiddleware<QueryStringMiddleware>();
+            //app.UseMiddleware<QueryStringMiddleware>();
 
             app.UseRouting();
 
