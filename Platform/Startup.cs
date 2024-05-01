@@ -30,7 +30,7 @@ namespace Platform
                 app.UseDeveloperExceptionPage();
             }
             
-            app.UseMiddleware<LocationMiddlewares>();
+            app.UseMiddleware<LocationMiddleware>();
             
             /* app.Use(async(context, next) =>
             {

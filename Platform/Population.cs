@@ -32,6 +32,9 @@ namespace Platform
                     case "paris":
                         pop = 2_04_100;
                         break;
+                    case "monaco":
+                        pop = 20_000;
+                        break;
 
                 }
                 if (pop.HasValue)

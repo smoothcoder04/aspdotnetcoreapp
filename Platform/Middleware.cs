@@ -15,7 +15,7 @@ namespace Platform
             this.options = opts.Value;
         }
 
-        private async Task Invoke(HttpContext context)
+        public async Task Invoke(HttpContext context)
         {
             if(context.Request.Path == "/location")
             {
