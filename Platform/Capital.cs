@@ -8,7 +8,7 @@ namespace Platform
     {
         private RequestDelegate next;
 
-        public Capital(){};
+        public Capital(){}
         public Capital(RequestDelegate next)
         {
             this.next = next;
@@ -28,8 +28,8 @@ namespace Platform
                     case "france":
                         capital = "paris";
                         break;
-                    case "monaco"
-                        context.Response.Redirect($"/population/{country}")
+                    case "monaco":
+                        context.Response.Redirect($"/population/{country}");
                         return;
                 }
                 if (capital != null)
@@ -44,4 +44,5 @@ namespace Platform
             }
 
     }
+}
 }

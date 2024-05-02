@@ -17,65 +17,17 @@ namespace Platform
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<MessageOptions>(options => {
-                options.CityName = "Oxford";
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            app.UseDeveloperExceptionPage();
+            app.UseMiddleware<Population>();
+            app.UseMiddleware<Capital>();
+            app.Use(async (context, next) =>
             {
-                app.UseDeveloperExceptionPage();
-            }
-            
-            app.UseMiddleware<LocationMiddleware>();
-            
-            /* app.Use(async(context, next) =>
-            {
-                if(context.Request.Path == "/location")
-                {
-                    MessageOptions opts = msgOptions.Value;
-                    await context.Response.WriteAsync($"{opts.CityName}, {opts.CountryName}");
-                }
-                else
-                {
-                    await next();
-                }
-            }); */
-
-            
-            app.Use(async (context, next) => 
-            {
-                if(context.Request.Path == "/short")
-                {
-                    await context.Response.WriteAsync("Request short circuited");
-                }
-                else
-                {
-                    await next();
-                }
-            });
-
-            app.Use(async (context, next)=> {
-                if (context.Request.Method == HttpMethods.Get
-                && context.Request.Query["custom"] == "true") {
-                    await context.Response.WriteAsync("Custom Middleware \n");
-                }
-                await next();
-            });
-
-            //app.UseMiddleware<QueryStringMiddleware>();
-
-            app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                await context.Response.WriteAsync("Terminal middleware reached");
             });
         }
     }
