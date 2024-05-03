@@ -8,9 +8,14 @@ namespace Platform
     {
         private RequestDelegate next;
 
+        public QueryStringMiddleware()
+        {
+            //do nothing
+        }
+
         public QueryStringMiddleware(RequestDelegate nextDelegate)
         {
-            this.next = nextDelegate;
+            next = nextDelegate;
         }
         public async Task Invoke(HttpContext context)
         {
@@ -19,7 +24,11 @@ namespace Platform
             {
                 await context.Response.WriteAsync("Class-based middleware \n");
             }
-            await next(context);
+            if (next!=null)
+            {
+                await next(context);
+            }
+            
         }
     }
     public class LocationMiddleware
