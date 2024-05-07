@@ -17,28 +17,25 @@ namespace Platform
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-                services.Configure<MessageOptions>(options => {
-                options.CityName = "Oxford";
-                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            /* app.Map("/branch", branch => {
-                branch.Run(new QueryStringMiddleware().Invoke);
-            }); */
-            //app.UseMiddleware<QueryStringMiddleware>();
-            app.UseMiddleware<LocationMiddleware>();
+            app.UseDeveloperExceptionPage();
+            //app.UseMiddleware<Population>();
+            //app.UseMiddleware<Capital>();
+
             app.UseRouting();
-            app.UseEndpoints(endpoints => {
-                endpoints.MapGet("/", async context => {
-                    await context.Response.WriteAsync("Hello World!");
+            app.UseEndpoints(endpoints =>{
+                endpoints.MapGet("routing", async context => {
+                    await context.Response.WriteAsync("Request was routed");
                 });
+                endpoints.MapGet("capital/uk", new Capital().Invoke);
+                endpoints.MapGet("population/paris", new Population().Invoke);
+            });
+            app.Use(async(context, next) => {
+                await context.Response.WriteAsync("Terminal Middleware Reached.");
             });
         }
     }
