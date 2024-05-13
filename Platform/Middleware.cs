@@ -24,7 +24,7 @@ namespace Platform
             {
                 await context.Response.WriteAsync("Class-based middleware \n");
             }
-            if (next!=null)
+            if (this.next!=null)
             {
                 await next(context);
             }

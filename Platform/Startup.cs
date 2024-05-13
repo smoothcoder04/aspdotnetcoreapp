@@ -27,14 +27,21 @@ namespace Platform
             //app.UseMiddleware<Capital>();
 
             app.UseRouting();
-            app.UseEndpoints(endpoints =>{
-                endpoints.MapGet("routing", async context => {
-                    await context.Response.WriteAsync("Request was routed");
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("{first}/{second}/{third}", async context =>
+                {
+                    await context.Response.WriteAsync("Request was routed \n");
+                    foreach (var kvp in context.Request.RouteValues)
+                    {
+                        await context.Response.WriteAsync($"{kvp.Key}: {kvp.Value}\n");
+                    }
                 });
                 endpoints.MapGet("capital/uk", new Capital().Invoke);
                 endpoints.MapGet("population/paris", new Population().Invoke);
             });
-            app.Use(async(context, next) => {
+            app.Use(async (context, next) =>
+            {
                 await context.Response.WriteAsync("Terminal Middleware Reached.");
             });
         }
