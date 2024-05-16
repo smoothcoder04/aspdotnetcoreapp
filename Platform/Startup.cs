@@ -29,7 +29,7 @@ namespace Platform
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("{first}/{second}/{third}", async context =>
+                endpoints.MapGet("{fitst:alpha:length(3)}/{second:bool}", async context =>
                 {
                     await context.Response.WriteAsync("Request was routed \n");
                     foreach (var kvp in context.Request.RouteValues)
@@ -37,7 +37,7 @@ namespace Platform
                         await context.Response.WriteAsync($"{kvp.Key}: {kvp.Value}\n");
                     }
                 });
-                endpoints.MapGet("capital/{country}", Capital.Endpoint);
+                endpoints.MapGet("capital/{country=UK}", Capital.Endpoint);
                 endpoints.MapGet("population/{city}", Population.Endpoint);
             });
             app.Use(async (context, next) =>
