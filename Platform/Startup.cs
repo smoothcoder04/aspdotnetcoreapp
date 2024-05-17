@@ -37,8 +37,12 @@ namespace Platform
                         await context.Response.WriteAsync($"{kvp.Key}: {kvp.Value}\n");
                     }
                 });
-                endpoints.MapGet("capital/{country=UK}", Capital.Endpoint);
+                endpoints.MapGet("capital/{country=regex(^uk|france|monaco$)}", Capital.Endpoint);
                 endpoints.MapGet("population/{city}", Population.Endpoint);
+
+                endpoints.MapFallback(async context => {
+                    await context.Response.WriteAsync("Routed to fallback endpoint");
+                });
             });
             app.Use(async (context, next) =>
             {
