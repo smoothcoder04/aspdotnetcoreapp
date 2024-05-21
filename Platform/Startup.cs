@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using Platform.Services;
 
 namespace Platform
 {
@@ -23,30 +25,28 @@ namespace Platform
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseDeveloperExceptionPage();
-            //app.UseMiddleware<Population>();
-            //app.UseMiddleware<Capital>();
-
             app.UseRouting();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("{fitst:alpha:length(3)}/{second:bool}", async context =>
-                {
-                    await context.Response.WriteAsync("Request was routed \n");
-                    foreach (var kvp in context.Request.RouteValues)
-                    {
-                        await context.Response.WriteAsync($"{kvp.Key}: {kvp.Value}\n");
-                    }
-                });
-                endpoints.MapGet("capital/{country=regex(^uk|france|monaco$)}", Capital.Endpoint);
-                endpoints.MapGet("population/{city}", Population.Endpoint);
+            app.UseMiddleware<WeatherMiddleware>();
 
-                endpoints.MapFallback(async context => {
-                    await context.Response.WriteAsync("Routed to fallback endpoint");
-                });
-            });
+            IResponseFormatter formatter = new TextResponseFormatter();
             app.Use(async (context, next) =>
             {
-                await context.Response.WriteAsync("Terminal Middleware Reached.");
+                if (context.Request.Path == "middleware/function")
+                {
+                    await formatter.Format(context, "Middleware Function : It is snowing in Chicago");
+                }
+                else
+                {
+                    await next();
+                }
+            });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("/endpoint/class", WeatherEndpoint.Endpoint);
+                endpoints.MapGet("/endpoint/function", async context =>
+                {
+                    await context.Response.WriteAsync("Endpoint function: it is sunny in LA!!!");
+                });
             });
         }
     }

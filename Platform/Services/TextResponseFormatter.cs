@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Platform.Services
 {
-    public class TestResponseFormatter : IResponseFormatter
+    public class TextResponseFormatter : IResponseFormatter
     {
         private int responseCounter = 0;
         public async Task Format(HttpContext context, string content)
