@@ -13,6 +13,7 @@ namespace Platform.Services
         }
         public static TextResponseFormatter Singleton
         {
+            
             get
             {
                 if (shared == null)
