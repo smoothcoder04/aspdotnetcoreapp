@@ -25,7 +25,7 @@ namespace Platform
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IResponseFormatter formatter)
         {
-            app.UseDeveloperExceptionPage(); 
+            app.UseDeveloperExceptionPage();
             app.UseRouting();
             app.UseMiddleware<WeatherMiddleware>();
 
@@ -43,9 +43,8 @@ namespace Platform
             });
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapGet("/endpoint/class", WeatherEndpoint.Endpoint);
-                endpoints.MapWeather("/endpoint/class");
-                
+                endpoints.MapEndpoint<WeatherEndpoint>("/endpoint/class");
+
                 endpoints.MapGet("/endpoint/function", async context =>
                 {
                     await formatter.Format(context,
